@@ -1,0 +1,15 @@
+<h1 class="post-title p-name" itemprop="name headline">Projects</h1>
+
+{% for project in site.projects %}
+	<a class="project-card" href="{{project.url}}">
+		<div class="project-card-title">{{project.title}}</div>
+		{% if project.coverimage %}
+			<img class="project-card-img" src="{{ site.url }}{{ site.baseurl }}/assets/images/{{project.coverimage}}" alt="{{ include.description }}">
+		{% elsif project.coveryoutube %}
+			{% include youtubePlayer.html id=project.coveryoutube %}
+		{% else %}
+			<div class="project-card-img">No Cover Image or Video Found!</div>
+		{% endif %}
+		<div class="project-card-description">{{project.excerpt}}</div>
+	</a>
+{% endfor %}

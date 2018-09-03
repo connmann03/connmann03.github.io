@@ -1,0 +1,10 @@
+{% assign imgcnt = include.images | size %}
+{% if imgcnt > 0 %}
+  <div style="background: red; padding: 10px; position: relative;">
+  {% for image in page.images %}
+    {% assign name = image[0] %}
+    {% assign desc = image[1] %}
+    {% include image.html filename=name description=desc %}
+  {% endfor %}
+  </div>
+{%endif%}

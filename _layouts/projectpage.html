@@ -1,0 +1,46 @@
+---
+layout: cards
+---
+
+<main class="page-content cards-container" aria-label="Content">
+	<h1 class="large-section-heading">Project</h1>
+      <div class="wrapper">
+	      	<header class="post-header">
+			    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+			    {%- capture tagcolor -%}
+			    rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %})
+			    {%- endcapture -%}
+			    <p class="post-meta">
+			      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+			        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+			        Project started on {{ page.date | date: date_format }}
+			      </time>
+			      {%- if page.author -%}
+			        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+			      {%- endif -%}</p>
+			    <ul class="post-tag-list" style="">
+			      {% for tags in page.tags %}
+			        <li class="post-tag-list-item" style="background: {{tagcolor}}">{{ tags }}</li>
+			      {% endfor %}
+			    </ul>
+			  </header>
+	        {% if page.coverimage %}
+				{% include image.html filename=page.coverimage description=page.excerpt %}
+			{% elsif page.coveryoutube %}
+				{% include youtubePlayer.html id=page.coveryoutube %}
+			{% else %}
+				<div class="project-card-img">No Cover Image or Video Found!</div>
+			{% endif %}
+
+
+
+
+
+			<div class="post-content e-content" itemprop="articleBody">
+		    {{ page.content  }}
+		    {% include projectdummybody.html%}
+		  </div>
+	</div>
+</main>
+
+{% include postcards.html %}

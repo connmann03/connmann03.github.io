@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body style="background: linear-gradient( rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), linear-gradient( 90deg, rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), linear-gradient( -90deg, rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), url('{{ site.url }}{{ site.baseurl }}{% include getrandomimage.html %}'); background-blend-mode: screen;">
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      {% if page.url contains "/projects/"%}
+        <div class="page-nav-wrapper-projectpage clearfix">
+      {%else%}
+        <div class="page-nav-wrapper clearfix">
+      {%endif%}
+        {{ content }}
+      }
+      </div>
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

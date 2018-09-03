@@ -1,0 +1,21 @@
+{%- assign totNumSiteImgs = site.static_files | size -%}
+{%- assign totNumPageImgs = page.images | size -%}
+{%- if totNumPageImgs > 0 -%}
+	{%- assign index = totNumPageImgs | minus: 1 -%}
+{%- else -%}
+	{%- assign index = totNumSiteImgs | minus: 1 -%}
+{%- endif -%}
+{%- capture randindex -%}
+{%if index==0 %}
+{{index}}
+{%else%}
+{%- include random.html min=0 max=index -%}
+{%endif%}
+{%- endcapture -%}
+{%- assign randindex = randindex | plus: 0 -%}
+{%- if totNumPageImgs > 0 -%}
+	{%- assign path = page.images[randindex][0] | prepend:'/assets/images/' -%}
+{%- else -%}
+	{%- assign path = site.static_files[randindex].path -%}
+{%- endif -%}
+{{- path -}}

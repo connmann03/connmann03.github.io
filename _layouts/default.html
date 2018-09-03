@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body style="background: linear-gradient( rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), linear-gradient( 90deg, rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), linear-gradient( -90deg, rgb({% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %},{% include random.html min=0 max=255 %}), transparent ), url('{{ site.url }}{{ site.baseurl }}{% include getrandomimage.html %}'); background-blend-mode: screen;">
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+
+      <div class="page-nav-wrapper clearfix">
+        <div class="page-nav">
+        {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">
+            <div class="page-nav-table">
+              <div class="page-nav-table-cell">
+                {{page.next.title}}
+                <div class="page-nav-date">{{page.next.date | date: "%B %d, %Y"}}</div>
+              </div>
+              <div class="page-nav-table-arrow">&rarr;</div>
+            </div>
+          </a>
+        {% endif %}
+        {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">
+            <div class="page-nav-table">
+              <div class="page-nav-table-arrow">&larr;</div>
+              <div class="page-nav-table-cell">
+                {{page.previous.title}}
+                <div class="page-nav-date">{{page.previous.date | date: "%B %d, %Y"}}</div>
+              </div>
+            </div>
+          </a>
+        {% endif %}
+        </div>
+      </div>
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
