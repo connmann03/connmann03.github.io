@@ -1,0 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+body {
+	background: linear-gradient( limegreen, transparent ), linear-gradient( 90deg, skyblue, transparent ), linear-gradient( -90deg, coral, transparent ), url(http://localhost:4000/assets/images/sphere.png);
+    background-blend-mode: screen;
+}
