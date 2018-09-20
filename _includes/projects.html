@@ -1,7 +1,8 @@
 <div class="cards-container">
 	<h1 class="large-section-heading">Projects</h1>
 
-	{% for project in site.projects %}
+	{% assign sorted = (site.projects | sort: 'datestarted') | reverse %}
+	{% for project in sorted %}
 		<a class="project-card" href="{{project.url}}">
 			<div class="project-card-title">{{project.title}}</div>
 			{% if project.coverimage %}
