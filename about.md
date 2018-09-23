@@ -9,7 +9,7 @@ Hey yeah um...my name's Conner (with an "e") and I make games! I don't do it all
 
 {% include image.html filename="selfphoto.jpg" description="Me" %}
 
-{% include image.html filename="P1030565.JPG" "Eating Prince Street Pizza with Big Bro Adam" %}
+{% include image.html filename="P1030565.JPG" description="Eating Prince Street Pizza with Big Bro Adam" %}
 
 My social medias/ways to contact me:
 	My Youtube: (insert link)
