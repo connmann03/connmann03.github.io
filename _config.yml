@@ -38,6 +38,14 @@ collections:
     output: true
     permalink: /projects/:path/
 
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - home.html 
+ - about.md 
+ - projects.html
+ - posts.md
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

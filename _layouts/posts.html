@@ -1,0 +1,15 @@
+---
+layout: cards
+---
+
+{% if page.path == "posts.md" %}
+<div class="home" style="border:none; margin:0;">
+{% else %}
+<div class="home">
+{% endif %}
+
+  {{ content }}
+
+  {%- include homepage-postcards.html -%}
+
+</div>

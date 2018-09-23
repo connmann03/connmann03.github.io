@@ -3,35 +3,19 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+    <div style="display:table;width:100%;">
+      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+      <div class="footer-desc">
+        <span class="footer-desc-inner">{{- site.description | escape -}}</span>
       </div>
     </div>
 
+    <div class="footer-links">
+        {%- if site.email -%}
+          <a class="u-email footer-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        {%- endif -%}
+        <a class="rss-subscribe footer-link" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a>
+        {%- include social.html -%}
+    </div>
   </div>
-
 </footer>
