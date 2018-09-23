@@ -11,6 +11,12 @@ Hey yeah um...my name's Conner (with an "e") and I make games! I don't do it all
 
 {% include image.html filename="P1030565.JPG" description="Eating Prince Street Pizza with Big Bro Adam" %}
 
+{% include image.html filename="P1020380.JPG" description="Taking on the Hiroshima locals in Tekken (as Eevee)" %}
+
+{% include image.html filename="P1020298.JPG" description="Himeji Castle" %}
+
+{% include image.html filename="P1020237.JPG" description="Playing Dragonball Zenkai. This game heavily influenced my Horde Refined Game." %}
+
 My social medias/ways to contact me:
 	My Youtube: (insert link)
 	Twitter: (insert link)
