@@ -5,7 +5,7 @@ date: "2020-08-27"
 projects: [Journalism Class Posts]
 tags: [Journalism, Writing, Hip-Hop, Music]
 excerpt: "Playboi Carti fans are hungry for his music and will do anything for it."
-images: [[cartibunny.PNG]]
+images: [[cartibunny.png]]
 ---
   The artist behind many Billboard Hot 100 “works of art”, such as his many classics “Magnolia”(2017), “Wokeuplikethis”, “Shoota”(2018), and many more. “Magnolia” was truly his first breakout single that revealed to the public eye who this Playboi Carti person was. His hit single mentioned a popular dance move called the Milly Rock. Playboi Carti says, “In New York I Milly Rock,” referring to this dance move. A month later, popular Youtube influencer Roy Purdy uploaded a video to his Youtube channel doing the Milly Rock in New York to Playboi Carti’s “Magnolia” song. This video blew up with millions of views and people started sharing the song globally. Playboi Carti was now known in the “public eye.” This one song prospered his professional career, but years before there were other various hit singles that caused a rush of fans like the “Magnolia Effect.” One said hit single that privately exploded his career was “Broke Boi.” 
   
@@ -13,7 +13,7 @@ images: [[cartibunny.PNG]]
   
   A year later, it’s 2017 and Playboi Carti dropped his afamed Playboi Carti (Self-Titled) mixtape with features from Lil Uzi Vert to A$AP Rocky. Shortly after his release of this project, fans still wanted more music(you will see this recurring in the future). Playboi Carti’s die hard fan base was wanting even more music. 
 
-{% include image.html filename="cartibunny.PNG" description="Playboi Carti" %}
+{% include image.html filename="cartibunny.png" description="Playboi Carti" %}
 
   He frequently would share snippets of unreleased music on his various social media outlets. Constantly posting snippets of new music, fans were going crazy hearing these. Some fans even took it really far by hacking into the recording studios’ computers to get these unreleased files. After the hackers had this file, they didn’t just want to give out the song to the public, the hacker wanted money from the community. The hacker would post it on Music Mafia asking for a great sum of money in the low thousands range. Music Mafia is an illegal music sharing website where owners of these songs can host these songs online and ask for payments for it. One of Carti’s earliest leaks was called “Telly / We So Proud of Him.” This song had a high pitch beat with almost a piano sound effect going on. The song definitely made the die-hard fans happy. This was only the start for Playboi Carti leaks.
   
