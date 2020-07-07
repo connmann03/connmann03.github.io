@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Cult-like Following of Playboi Carti"
-date: "2020-08-27"
+date: "2019-08-27"
 projects: [Journalism Class Posts]
 tags: [Journalism, Writing, Hip-Hop, Music]
 excerpt: "Playboi Carti fans are hungry for his music and will do anything for it."
