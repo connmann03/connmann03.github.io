@@ -16,3 +16,4 @@ The people of Italy are taking this event very seriously and are attempting to b
 
   These “Sand Smugglers” were going to sell the 14 bottles full of sand on Ebay or various other sites for a high markup price. Most people would pay extra for anything from Italy, think of wine, poultry, etc. U.S citizens pay way over the normal price for anything marked with “Imported from Italy” and it’s outrageous. 
 
+{% include image.html filename="Sardinia-Italy.JPG" description="Sardinia Beach in Italy" %}
