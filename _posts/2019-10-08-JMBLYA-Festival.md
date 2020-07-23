@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "JMBLYA: A Complete Concert Collapse"
 date: "2019-10-08"
