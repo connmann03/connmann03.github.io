@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "School Resource Officer Who Arrested Elementary School Students is Fired"
 date: "2019-09-24"
