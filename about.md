@@ -17,9 +17,4 @@ Hey yeah um...my name's Conner (with an "e") and I make games! I don't do it all
 
 {% include image.html filename="P1020237.JPG" description="Playing Dragonball Zenkai. This game heavily influenced my Horde Refined Game." %}
 
-My social medias/ways to contact me:
-	My Youtube: (insert link)
-	Twitter: (insert link)
-	Instagram: (insert link)
-	Email: (insert email if safe)
-	
+
